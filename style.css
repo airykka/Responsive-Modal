@@ -17,9 +17,19 @@ body {
   height: 100vh;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #272c44;
+}
+
+h2 {
+  font-size: 3rem;
+  color: rgb(158, 158, 158);
+}
+
+.btns {
+  display: flex;
 }
 
 .show-modal {
@@ -42,7 +52,7 @@ body {
   top: 1.2rem;
   right: 2rem;
   font-size: 5rem;
-  color: #333;
+  color: #272c44;
   cursor: pointer;
   border: none;
   background: none;
@@ -51,6 +61,7 @@ body {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  color: #272c44;
 }
 
 p {
@@ -85,4 +96,19 @@ p {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+
+@media (max-width: 570px) {
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .btns {
+    flex-direction: column;
+  }
+
+  .show-modal {
+    padding: 1.75rem 5rem;
+    margin: 2rem;
+  }
 }
